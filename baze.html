@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+        <title>
+            Bazele sahului
+        </title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Cum se joaca accest joc?</h1>
+          </div>
+          <div id="menu">
+            <ul>
+                <li><a href="index.html"><b>Pagina principala</b></a></li>
+            </ul>
+            </div>
+        <div id="tq">
+            <p style="size: 20;">Pentru a juca acest joc, avem nevoie de un set specific format dintr-o tabla cu 64 de patratele albe si negre si 32 de piese: 16 albe si 16 negre. Dintre acestea, 8 sunt pioni, 2 sunt turnuri, 2 cai, 2 nebuni, o dama si un rege pentru fiecare culoare.</p>
+        </div>
+        <img id="photo" src="images/asezare.jpg" class="center">
+        <div id="center_text">
+            In acest mod se aseaza piesele pe o tabla de sah inainte de a incepe jocul.
+        </div>
+        Fiecare patrat de pe tabla de sah se poate identifica dupa culoare(alb si negru) si dupa coordonate(litere si cifre), ca in figura:
+        <img id="photo" src="images/coord.jpg" class="center">
+        <p>Pentru a scrie o mutare, vom spune piesa(C,N,D,T,R) si patratul in care ea ajunge (ex: Nd3-nebun la d3). Mutarile de pion de scriu folosind doar patratul in care el ajunge (ex:d4). O capturare va fi marcata cu semnul "x"(ex:Dxf7 sau o captura de pion: exd5); sahul va fi marcat cu semnul "+" (ex:Nc6+); matul cu semnul "#"(ex:Dg7#); promovarea unui pion va folosi semnul "=" si piesa in care el se va transforma(ex:g8=D), iar en-passant va lua in considerare patratul in care ajunge pionul(ex:exf6).</p>
+        <p style="text-decoration-line: underline; margin-left: 50px;">
+            Cum se muta piesele?
+        </p>
+        <div id="tq">
+            <p style="size: 40">
+                1. Pionul
+            </p>
+        </div>
+        <div>
+            Pionul este considerata de multi cea mai slaba dintre piese din cauza mutarilor limitate pe care le poate face, un lucru total fals. Pionul are 5 variante de a muta, fiecare putand fi facuta in situatii diferite:
+        </div>
+        <ul>
+            <li><i>Mutarea cu un patrat in fata(mutarea normala)</i></li>
+            <img style="height:200px; width:200px"src="images/regular_pawn_move.jpg">
+            <p>-se poate face in orice moment daca patratul in care pionul ajunge nu este ocupat de alta piesa</p>
+            <li><i>Mutarea cu doua patrate in fata</i></li>
+            <img style="height:200px; width:50px"src="images/2squares_pawnmove.png">
+            <P>-se poate face numai daca pionul nu a mai fost mutat niciodata in respectivul meci</P>
+            <li><i>Capturarea</i></li>
+            <img style="height:200px; width:200px" src="images/pawn_capture.jpg">
+            <p>-se poate face cand o piesa adversa este plasata in diagonala patratului pe care este amplasat pionul</p>
+            <p><i>ATENTIE!</i> pionii pot merge doar inainte, deci nici capturarea unei piese inamice nu poate fi facuta inapoi!</p>
+            <li><i>En-passant</i></li>
+            <p>-este un caz particular al capturarii ce nu poate fi executat decat intr-un caz special</p>
+            <img style="height:300px; width:200px" src="images/en-passant.jpg">
+            <p>-se poate executa doar ca in imagine: negrul a mutat anterior pinul doua patrate, iar acum pionul alb se afla exact langa el pe orizontala. Acum, albul poate captura pionul negru ca si cum pionul negru ar fi cu un patrat mai in spate</p>
+            <li><i>Promovarea</i></li>
+            <p>-este motivul pentru care pionul devine cea mai importanta piesa pentru finalul partidei</p>
+            <p>-cand pionul ajunge pe ultima linie(adica unde au inceput piesele negre), pionul poate fi transformat in orice alta piesa in afara de rege</p>
+            <img style="height:300px; width:300px" src="images/pawn_promotion.jpg">
+        </ul>
+        <div id="tq">
+            <p style="size: 40">
+                2. Calul
+            </p>
+        </div>
+        <div>
+            Calul este acea piesa care poate fi foarte periculoasa pentru cei neatenti, mutarile aceseia fiind uneori greu de observat. In plus, este singura piesa care poate "sari" peste alte piese.
+            <p>
+                El se muta in forma de "L", ca in figura:
+            </p>
+            <img style="height:200px; width:200px"src="images/knight-1-move.png">
+        </div>
+        <div id="tq">
+            <p style="size: 40">
+                3. Nebunul
+            </p>
+        </div>
+        <div>
+            <p>
+                Nebunul se muta intotdeauna in diagonala, ca in figura:
+            </p>
+            <img style="height:200px; width:200px"src="images/bishop_move.jfif">
+        </div>
+        <div id="tq">
+            <p style="size: 40">
+                4. Turnul
+            </p>
+        </div>
+        <div>
+            <p>Turnul se muta pe o linie sau pe o coloana, ca in figura:</p>
+            <img style="height:200px; width:200px"src="images/rook_move.png">
+        </div>
+        <div id="tq">
+            <p style="size: 40">
+                5. Dama
+            </p>
+        </div>
+        <div>
+            <p>Dama este o combinatie intre turn si nebun, ea putand fi mutata si pe diagonala si pe coloana si pe linie, ca in figura:</p>
+            <img style="height:200px; width:200px"src="images/queen_move.jfif">
+        </div>
+        <div id="tq">
+            <p style="size: 40">
+                6. Regele
+            </p>
+        </div>
+        <div>
+            Regele este cea mai importanta piesa, scopul jocului fiind atacarea acestuia, fara ca el sa mai poata scapa(situatie numita sah-mat).
+            <img style="height:200px; width:200px"src="images/checkmate.jfif">
+            Atacarea acestuia de catre orice piesa, se numeste sah. 
+            In plus, regii celor doi jucatori nu pot ajunge niciodata in patratele vecine, indiferent de directie.
+            Regele poate face doua mutari:
+        </div>
+        <ul>
+            <li><i>Mutarea normala</i></li>
+            <p>-se poate face in orice directie, ca in figura:</p>
+            <img style="height:200px; width:200px"src="images/king_move.png">
+            <li><i>Rocada</i></li>
+            <p>Este o mutare ce se face impreuna cu tura si poate fi de doua feluri:</p>
+            <ol>
+                <li><i>Rocada mica</i></li>
+                <p>-se face impreuna cu turnul mai apropiat de rege</p>
+                <p>-necesita un spatiu liber intre turn si rege, iar aceste patrate nu trebuie sa fie atacate de piese adverse</p>
+                <img style="height:200px; width:200px"src="images/kingside_castling.jpg">
+                <li><i>Rocada mare</i></li>
+                <p>-se face impreuna cu turnul mai departat de rege</p>
+                <p>-necesita un spatiu liber intre turn si rege, iar aceste patrate nu trebuie sa fie atacate de piese adverse</p>
+                <img style="height:200px; width:200px"src="images/queenside_castling.png">
+            </ol>
+        </ul>
+    </body>
+</html>
